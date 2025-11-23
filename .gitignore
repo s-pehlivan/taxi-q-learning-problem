@@ -1,0 +1,72 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Environments ---
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# --- Jupyter Notebook ---
+.ipynb_checkpoints
+*.nbconvert.ipynb
+
+# --- PyInstaller ---
+# Usually these files are generated during packaging
+*.spec
+dist/
+build/
+
+# --- Logs and databases ---
+*.log
+*.sqlite3
+*.db
+*.csv
+*.npy
+*.dat
+*.tsv
+
+
+# --- Unit test / coverage reports ---
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# --- IDEs and editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS-specific ---
+.DS_Store
+Thumbs.db
+
+# --- Jupyter Notebook autosaves ---
+*.ipynb_checkpoints/
+*.ipynb~*
+
+# --- Temporary files ---
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# --- Project-specific (optional, uncomment if needed) ---
+# data/
+# models/
+# outputs/
+# figures/
