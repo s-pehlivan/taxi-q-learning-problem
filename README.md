@@ -40,9 +40,20 @@ Taksinin duvarların içerisinden geçmek gibi grid yapısının izin vermediği
 - Yanlış noktadan yolcu alındığında taksi -10 ödülünü alırken doğru noktadan yolcu alındığında taksi +10 ödülünü alır.
 - Yolcu yanlış yerde bırakıldığında ödül -10 olurken doğru noktada yolcu bırakıldığında ödül +20 olur.
 
-## Ortam Simülasyonu
+## Sonuçlar
+Eğitim fonkisyonundan sonra kaydedilen ödül değerleri kullanılarak yumuşatılmış hareketli ortalama yöntemi ile yapılan görselleştirmeye göre -50lerde başlayan ödül değerleri +20lere yakınsayarak ajanın başarılı bir şekilde yolcu alma ve bırakma öğrendiğini göstermektedir. 
+
+![training_sma_plot.jpg](./training_sma_plot.jpg)
+
+Test fonkisyonu sonrasında dönen ödül değerleri ile oluşturulan bar grafiği ise öğrenme sonrasında ajanın ortalama +17.6 ödül değeri alarak başarıyla yolcuyu alma ve gitmesi gereken yere bırakma işlemlerini tamamladığını göstermektedir.
+
+![validation_plot_1.jpg](./validation_plot_1.jpg)
+
+### Ortam Simülasyonu
 
 Gerek eğitim sürecindeki bölümlerin gerek test sürecindeki bölümlerin hareketleri, grid içerisinde her bir bileşen farklı renklerle gösterilerek animasyon şeklinde görüntülenebilir. Taksi yolcu olmadığında sarı renklidir. Taksiyi bekleyen yolcu mavi renkle gösterilir. Yolcu taksiye bindiğinde taksi yeşil olur ve sarı renkli hedefe yolcu bırakıldığında bölüm sonlandırılır. 
+
+Test fonksiyonunun çıktısı ile oluşturulan grid simülasyonunda da görüldüğü gibi ajan başarılı bir şekilde yolcuyu alarak geitmesi gereken hedef hücreye bırakmaktadır.
 
 **Örnek bir test simülasyonu:**
 
